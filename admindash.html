@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Dash</title>
+  <link rel="stylesheet" href="./css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://cdn.pubnub.com/pubnub-3.4.4.js"></script>
+	<script src="./js/admindash.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <h1>Admin Dash</h1>
+
+  <!-- Channels -->
+  <div>
+  	<h1>Channels</h1>
+  	<ul id="channelList">
+  	</ul>
+  </div>
+
+  <!-- List of present users -->
+  <div id="user_list">
+    <h1>Users</h1>
+    <div id="users"></div>
+  </div>
+
+  <!-- Messages -->
+  <div id="message_list">
+  	 <h1>Messages</h1>
+  	 <h3><span id="roomName"></span></h3>
+     <div id="messages">
+     	<ul id="messageList">
+     		<!-- <li> User message </li> -->
+     	</ul>
+     </div>
+
+  </div>
+  <input type="text" id="messageContent"/>
+  <button type="button" id="sendMessageButton">Send Message</button>
+
+</body>
+
+</html>
